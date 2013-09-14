@@ -8,7 +8,7 @@ The Kickstarter API is private, but with a valid Kickstarter account you can que
 
 ## Other tools
 
-Also made possible with: [Sinatra](http://www.sinatrarb.com/), [Sass](http://sass-lang.com/), [Compass](http://compass-style.org/), [Typekit](http://typekit.com/) and [Enytpo](http://entypo.com/).
+Also made possible with: [Sinatra](http://www.sinatrarb.com/), [HTML5 Boilerplate](http://html5boilerplate.com/), [Sass](http://sass-lang.com/), [Compass](http://compass-style.org/), [Typekit](http://typekit.com/) and [Enytpo](http://entypo.com/).
 
 ## Tasks
 
