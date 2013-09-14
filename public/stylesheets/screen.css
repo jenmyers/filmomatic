@@ -1,0 +1,285 @@
+/* $TITLE **********************************************************************
+
+	Style rules for Thefilmomatic.com
+	Jump to individual sections by searching for "$SECTION TITLE"
+
+*******************************************************************************/
+/* $CONTENTS *******************************************************************
+
+	* Imports
+	* Mixins
+	* Fonts
+	* Variables
+	* Grid
+	* Breakpoints
+	* Base
+	* Layout
+	* Modules
+	* Media Queries
+
+*******************************************************************************/
+/* $IMPORTS *******************************************************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* $MIXINS ********************************************************************/
+/* $FONTS *********************************************************************/
+@font-face {
+  font-family: "entypo-social";
+  src: url('/stylesheets/fonts/entypo-social.eot');
+  src: url('/stylesheets/fonts/entypo-social.eot?#iefix') format('eot'), url('/stylesheets/fonts/entypo-social.ttf') format('truetype'), url('/stylesheets/fonts/entypo-social.woff') format('woff'), url('/stylesheets/fonts/entypo-social.svg') format('svg');
+}
+
+/* $VARIABLES *****************************************************************/
+/* $GRID **********************************************************************/
+/* $BREAKPOINTS ***************************************************************/
+/* $BASE **********************************************************************/
+body {
+  background-color: #c9e0de;
+  color: #555555;
+  font-family: "proxima-nova", sans-serif;
+  line-height: 150%;
+  text-align: center;
+}
+
+header, footer, section {
+  *zoom: 1;
+  max-width: 39em;
+  _width: 39em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+header:after, footer:after, section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+header {
+  background-image: url("/images/thefilmomatic.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 252px;
+  padding-top: 5em;
+  margin-top: 1em;
+}
+header span {
+  color: #fff;
+  font-family: "tamarillo", cursive;
+  font-size: 3em;
+}
+
+h1 {
+  text-shadow: 6px 6px 1px #017b87;
+  color: #fff;
+  font-family: "hooligan", serif;
+  font-size: 7em;
+  line-height: 100%;
+}
+
+h2 {
+  font-family: "hooligan";
+  font-size: 2.5em;
+  font-weight: bold;
+  line-height: 100%;
+  margin-top: 0.5em;
+  text-shadow: 3px 3px 1px #f5faed;
+  text-transform: uppercase;
+}
+
+section {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #d4e9e7;
+  font-size: 1.2em;
+  padding: 1em;
+  width: 50%;
+}
+section p {
+  margin-bottom: 1.5em;
+  margin-top: 1em;
+}
+section img {
+  border: 1px solid #f5faed;
+  padding: 0.5em;
+}
+
+input[type=submit] {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 3px 3px 1px #c35527;
+  -moz-box-shadow: 3px 3px 1px #c35527;
+  box-shadow: 3px 3px 1px #c35527;
+  text-shadow: 3px 3px 1px #c35527;
+  background-color: #ec6730;
+  border: none;
+  color: #fff;
+  font-family: "hooligan", sans-serif;
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  padding: 0.5em 1em;
+}
+
+footer {
+  padding: 3em 0;
+}
+footer p {
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+footer span {
+  font-family: "tamarillo", cursive;
+  font-size: 2em;
+  margin: 0 0.2em;
+  text-transform: none;
+}
+
+.icon {
+  border-bottom: none;
+  color: #b4c9c7;
+}
+.icon:hover {
+  border-bottom: none;
+  color: #555555;
+}
+.icon.twitter:before, .icon.github:before {
+  content: attr(data-icon);
+  font-family: "entypo-social";
+  font-size: 4em;
+  margin: 0 0.2em;
+  speak: none;
+  vertical-align: bottom;
+}
+
+.label {
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+  background-color: #f5faed;
+  border: 1px solid #c2e0dd;
+  color: #017b87;
+  display: inline-block;
+  padding: 0.5em;
+  text-transform: uppercase;
+}
+
+.info {
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-right-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #fff;
+  border-top: 1px solid #c2e0dd;
+  border-right: 1px solid #c2e0dd;
+  border-bottom: 1px solid #c2e0dd;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.5em 2em;
+}
+
+a {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.75s;
+  -moz-transition-duration: 0.75s;
+  -o-transition-duration: 0.75s;
+  transition-duration: 0.75s;
+  color: #017b87;
+  font-weight: bold;
+  text-decoration: none;
+}
+a:hover {
+  color: #222;
+}
+a h1, a span {
+  font-weight: normal;
+}
+a.kickstart {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 3px 3px 1px #c35527;
+  -moz-box-shadow: 3px 3px 1px #c35527;
+  box-shadow: 3px 3px 1px #c35527;
+  text-shadow: 3px 3px 1px #c35527;
+  background-color: #ec6730;
+  border: none;
+  color: #fff;
+  display: inline-block;
+  font-family: "hooligan", sans-serif;
+  font-size: 1.5em;
+  font-weight: normal;
+  margin-top: 0.5em;
+  padding: 1em;
+  width: 30%;
+}

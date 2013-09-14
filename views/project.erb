@@ -1,0 +1,10 @@
+<section>
+	<h2><%= @project.name %></h2>
+	<p><%= @project.blurb %></p>
+	<img src="<%= @project.photo.full %>" />
+	<p><span class="label">Goal</span><span class="info">$<%= @project.goal.round.to_s.reverse.gsub(/(\d{3})(?=\d)/, '\\1,').reverse %></span></p>
+	<p><span class="label">Pledged</span><span class="info">$<%= @project.pledged.round.to_s.reverse.gsub(/(\d{3})(?=\d)/, '\\1,').reverse %></span></p>
+	<p><span class="label">Deadline</span><span class="info"><%= Time.at(@project.deadline).strftime("%a, %b %e")%></span></p>
+	<a class="kickstart" href="<%= @project.urls.web.project %>">Go to project page</a>
+	<p><a href="/project">Get me another film project</a></p>
+</section>
