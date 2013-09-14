@@ -1,22 +1,22 @@
 /* $TITLE **********************************************************************
 
-	Style rules for Thefilmomatic.com
-	Jump to individual sections by searching for "$SECTION TITLE"
+  Style rules for Thefilmomatic.com
+  Jump to individual sections by searching for "$SECTION TITLE"
 
 *******************************************************************************/
 
 /* $CONTENTS *******************************************************************
 
-	* Imports
-	* Mixins
-	* Fonts
-	* Variables
-	* Grid
-	* Breakpoints
-	* Base
-	* Layout
-	* Modules
-	* Media Queries
+  * Imports
+  * Mixins
+  * Fonts
+  * Variables
+  * Grid
+  * Breakpoints
+  * Base
+  * Layout
+  * Modules
+  * Media Queries
 
 *******************************************************************************/
 
@@ -38,119 +38,119 @@
 
 /* $VARIABLES *****************************************************************/
 
-$background:		#c9e0de;
-$foreground:		#555555;
-$section:				#d4e9e7;
-$action:				#ec6730;
+$background:    #c9e0de;
+$foreground:    #555555;
+$section:       #d4e9e7;
+$action:        #ec6730;
 $action-shadow: #c35527;
-$accent:				#f5faed;
-$contrast:			#b4c9c7;
-$border:				#c2e0dd;
-$link:					#017b87;
+$accent:        #f5faed;
+$contrast:      #b4c9c7;
+$border:        #c2e0dd;
+$link:          #017b87;
 
 /* $GRID **********************************************************************/
 
-$total-columns:	8;
-$column-width:	4em;
-$gutter-width:	1em;
-$grid-padding:	$gutter-width;
+$total-columns: 8;
+$column-width:  4em;
+$gutter-width:  1em;
+$grid-padding:  $gutter-width;
 
 /* $BREAKPOINTS ***************************************************************/
 
 /* $BASE **********************************************************************/
 
 body {
-	background-color: $background;
-	color: $foreground;
-	font-family: "proxima-nova", sans-serif;
-	line-height: 150%;
-	text-align: center;
+  background-color: $background;
+  color: $foreground;
+  font-family: "proxima-nova", sans-serif;
+  line-height: 150%;
+  text-align: center;
 }
 
 header, footer, section {
-	@include container;
+  @include container;
 }
 
 header {
-	background-image: url("/images/thefilmomatic.png");
-	background-position: center;
-	background-repeat: no-repeat;
-	min-height: 252px;
-	padding-top: 5em;
-	margin-top: 1em;
-	span {
-		color: #fff;
-		font-family: "tamarillo", cursive;
-		font-size: 3em;
-	}
+  background-image: url("/images/thefilmomatic.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 252px;
+  padding-top: 5em;
+  margin-top: 1em;
+  span {
+    color: #fff;
+    font-family: "tamarillo", cursive;
+    font-size: 3em;
+  }
 }
 
 h1 {
-	@include text-shadow(6px 6px 1px $link);
-	color: #fff;
-	font-family: "hooligan", serif;
-	font-size: 7em;
-	line-height: 100%;
+  @include text-shadow(6px 6px 1px $link);
+  color: #fff;
+  font-family: "hooligan", serif;
+  font-size: 7em;
+  line-height: 100%;
 }
 
 h2 {
-	font-size: 2.2em;
-	line-height: 100%;
-	margin-top: 0.5em;
-	text-shadow: 1px 1px 1px $accent;
-	text-transform: uppercase;
+  font-size: 2.2em;
+  line-height: 100%;
+  margin-top: 0.5em;
+  text-shadow: 1px 1px 1px $accent;
+  text-transform: uppercase;
 }
 
 section {
-	@include border-radius(5px);
-	background-color: $section;
-	font-size: 1.2em;
-	padding: 1em;
-	width: 50%;
-	p {
-		margin-bottom: 1.5em;
-		margin-top: 1em;
-	}
-	img {
-		border: 1px solid $accent;
-		padding: 0.5em;
-	}
+  @include border-radius(5px);
+  background-color: $section;
+  font-size: 1.2em;
+  padding: 1em;
+  width: 50%;
+  p {
+    margin-bottom: 1.5em;
+    margin-top: 1em;
+  }
+  img {
+    border: 1px solid $accent;
+    padding: 0.5em;
+  }
 }
 
 input[type=submit] {
-	@include border-radius(5px);
-	@include box-shadow(3px 3px 1px $action-shadow);
-	@include text-shadow(3px 3px 1px $action-shadow);
-	background-color: $action;
-	border: none;
-	color: #fff;
-	font-family: "hooligan", sans-serif;
-	font-size: 3em;
-	margin-bottom: 0.5em;
-	padding: 0.5em 1em;
+  @include border-radius(5px);
+  @include box-shadow(3px 3px 1px $action-shadow);
+  @include text-shadow(3px 3px 1px $action-shadow);
+  background-color: $action;
+  border: none;
+  color: #fff;
+  font-family: "hooligan", sans-serif;
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  padding: 0.5em 1em;
 }
 
 footer {
-	padding: 3em 0;
-	p {
-		font-size: 0.8em;
-		text-transform: uppercase;
-	}
-	span {
-		font-family: "tamarillo", cursive;
-		font-size: 2em;
-		margin: 0 0.2em;
-		text-transform: none;
-	}
+  padding: 3em 0;
+  p {
+    font-size: 0.8em;
+    text-transform: uppercase;
+  }
+  span {
+    font-family: "tamarillo", cursive;
+    font-size: 2em;
+    margin: 0 0.2em;
+    text-transform: none;
+  }
 }
 
 .icon {
-	border-bottom: none;
-	color: $contrast;
-	&:hover {
-		border-bottom: none;
-		color: $foreground;
-	}
+  border-bottom: none;
+  color: $contrast;
+  &:hover {
+    border-bottom: none;
+    color: $foreground;
+  }
   &.twitter:before, &.github:before {
     content: attr(data-icon);
     font-family: "entypo-social";
@@ -162,53 +162,53 @@ footer {
 }
 
 .label {
-	@include border-bottom-left-radius(5px);
-	@include border-top-left-radius(5px);
-	background-color: $accent;
-	border: 1px solid $border;
-	color: #017b87;
-	display: inline-block;
-	padding: 0.5em;
-	text-transform: uppercase;
+  @include border-bottom-left-radius(5px);
+  @include border-top-left-radius(5px);
+  background-color: $accent;
+  border: 1px solid $border;
+  color: #017b87;
+  display: inline-block;
+  padding: 0.5em;
+  text-transform: uppercase;
 }
 
 .info {
-	@include border-bottom-right-radius(5px);
-	@include border-top-right-radius(5px);
-	background-color: #fff;
-	border-top: 1px solid $border;
-	border-right: 1px solid $border;
-	border-bottom: 1px solid $border;
-	display: inline-block;
-	font-weight: bold;
-	padding: 0.5em 2em;
+  @include border-bottom-right-radius(5px);
+  @include border-top-right-radius(5px);
+  background-color: #fff;
+  border-top: 1px solid $border;
+  border-right: 1px solid $border;
+  border-bottom: 1px solid $border;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.5em 2em;
 }
 
 a {
-	@include transition-property(all);
-	@include transition-duration(0.75s);
-	color: $link;
-	font-weight: bold;
-	text-decoration: none;
-	&:hover {
-		color: #222;
-	}
-	& h1, & span {
-		font-weight: normal;
-	}
-	&.kickstart {
-		@include border-radius(5px);
-		@include box-shadow(3px 3px 1px $action-shadow);
-		@include text-shadow(3px 3px 1px $action-shadow);
-		background-color: $action;
-		border: none;
-		color: #fff;
-		display: inline-block;
-		font-family: "hooligan", sans-serif;
-		font-size: 1.5em;
-		font-weight: normal;
-		margin-top: 0.5em;
-		padding: 1em;
-		width: 30%;
-	}
+  @include transition-property(all);
+  @include transition-duration(0.75s);
+  color: $link;
+  font-weight: bold;
+  text-decoration: none;
+  &:hover {
+    color: #222;
+  }
+  & h1, & span {
+    font-weight: normal;
+  }
+  &.kickstart {
+    @include border-radius(5px);
+    @include box-shadow(3px 3px 1px $action-shadow);
+    @include text-shadow(3px 3px 1px $action-shadow);
+    background-color: $action;
+    border: none;
+    color: #fff;
+    display: inline-block;
+    font-family: "hooligan", sans-serif;
+    font-size: 1.5em;
+    font-weight: normal;
+    margin-top: 0.5em;
+    padding: 1em;
+    width: 30%;
+  }
 }

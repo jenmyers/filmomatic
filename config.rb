@@ -8,14 +8,14 @@ http_path             = '/'
 http_stylesheets_path = '/stylesheets'
 http_images_path      = '/images'
 http_javascripts_path = '/javascripts'
-http_fonts_path 			= '/stylesheets/fonts'
+http_fonts_path       = '/stylesheets/fonts'
 
 # File system locations
 css_dir               = File.join 'public', 'stylesheets'
 sass_dir              = File.join 'sass'
 images_dir            = File.join 'public', 'images'
 javascripts_dir       = File.join 'public', 'javascripts'
-fonts_path						= File.join 'public', 'stylesheets', 'fonts'
+fonts_path            = File.join 'public', 'stylesheets', 'fonts'
 
 # Syntax preference
 preferred_syntax      = :scss
