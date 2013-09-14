@@ -133,12 +133,10 @@ h1 {
 }
 
 h2 {
-  font-family: "hooligan";
-  font-size: 2.5em;
-  font-weight: bold;
+  font-size: 2.2em;
   line-height: 100%;
   margin-top: 0.5em;
-  text-shadow: 3px 3px 1px #f5faed;
+  text-shadow: 1px 1px 1px #f5faed;
   text-transform: uppercase;
 }
 
