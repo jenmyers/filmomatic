@@ -2,6 +2,8 @@
 
 Do you like your film super independent? Do you want to help an aspiring filmmaker bring their vision to the screen? Do you like clicking big, bright buttons? The Film-O-Matic allows you to get information about a random (within a fairly small sample size) narrative film Kickstarter project with a link to its fundraising page so that you can support the cause.
 
+__Note: Kickstarter recently changed their API and the Kickscraper gem is currently offline. Once gem updates happen, I'll get this app up and running again.__
+
 ## Kickstarter API
 
 The Kickstarter API is private, but with a valid Kickstarter account you can query project information. I used the [Kickscraper gem](https://github.com/markolson/kickscraper) to access what I needed.
